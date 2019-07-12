@@ -51,7 +51,7 @@ function ProductCatalog() {
 
 function Product({ src, name, size }) {
   return (
-    <div className={`product position-relative product${size}`}>
+    <div className={`product position-relative product ${size}`}>
       <img src={src} alt={name} className="img-fluid " />
       <h3 className="product__catalog__name">{name}</h3>
     </div>
