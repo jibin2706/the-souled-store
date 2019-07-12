@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap");
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./_colors";
+@import "./product.scss";
+
+body {
+  font-family: "Source Pro Sans", sans-serif;
+  color: $primary-text;
+}
