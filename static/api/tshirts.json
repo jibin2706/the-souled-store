@@ -1,0 +1,68 @@
+{
+    "products": [
+        {
+            "product_name": "Avengers Endgame: Iron Man Stark Industries",
+            "primary_image": "https://images.thesouledstore.com/public/theSoul/uploads/catalog/product/20190301172536-1.jpg",
+            "secondary_image": "https://images.thesouledstore.com/public/theSoul/uploads/catalog/product/20190507184216-1.jpg",
+            "normal_price": 499,
+            "exclusive_price": 399,
+            "product_type": "T-Shirts"
+        },
+        {
+            "product_name": "Iron Man: Arc Reactor Elemental",
+            "primary_image": "https://images.thesouledstore.com/public/theSoul/uploads/catalog/product/20190107214726-1.gif",
+            "secondary_image": "https://images.thesouledstore.com/public/theSoul/uploads/catalog/product/20190107215427-1.jpg",
+            "normal_price": 599,
+            "exclusive_price": 399,
+            "product_type": "T-Shirts"
+        },
+        {
+            "product_name": "Space Pattern",
+            "primary_image": "https://images.thesouledstore.com/public/theSoul/uploads/catalog/product/20190614134610-1.jpg",
+            "secondary_image": "https://images.thesouledstore.com/public/theSoul/uploads/catalog/product/20190614134631-1.jpg",
+            "normal_price": 549,
+            "exclusive_price": 399,
+            "product_type": "T-Shirts"
+        },
+        {
+            "product_name": "F.R.I.E.N.D.S: Hugsy",
+            "primary_image": "https://images.thesouledstore.com/public/theSoul/uploads/catalog/product/1546674166_Friends_Hugsy_Tshirt_FrontMockup.jpg",
+            "secondary_image": "https://images.thesouledstore.com/public/theSoul/uploads/catalog/product/1546674166_Friends_Hugsy_T-shirt_PrintFile_SquareImage.jpg",
+            "normal_price": 499,
+            "exclusive_price": 399,
+            "product_type": "T-Shirts"
+        },
+        {
+            "product_name": "Avengers Endgame: Iron Man Stark Industries",
+            "primary_image": "https://images.thesouledstore.com/public/theSoul/uploads/catalog/product/20190301172536-1.jpg",
+            "secondary_image": "https://images.thesouledstore.com/public/theSoul/uploads/catalog/product/20190507184216-1.jpg",
+            "normal_price": 499,
+            "exclusive_price": 399,
+            "product_type": "T-Shirts"
+        },
+        {
+            "product_name": "Iron Man: Arc Reactor Elemental",
+            "primary_image": "https://images.thesouledstore.com/public/theSoul/uploads/catalog/product/20190107214726-1.gif",
+            "secondary_image": "https://images.thesouledstore.com/public/theSoul/uploads/catalog/product/20190107215427-1.jpg",
+            "normal_price": 599,
+            "exclusive_price": 399,
+            "product_type": "T-Shirts"
+        },
+        {
+            "product_name": "Space Pattern",
+            "primary_image": "https://images.thesouledstore.com/public/theSoul/uploads/catalog/product/20190614134610-1.jpg",
+            "secondary_image": "https://images.thesouledstore.com/public/theSoul/uploads/catalog/product/20190614134631-1.jpg",
+            "normal_price": 549,
+            "exclusive_price": 399,
+            "product_type": "T-Shirts"
+        },
+        {
+            "product_name": "F.R.I.E.N.D.S: Hugsy",
+            "primary_image": "https://images.thesouledstore.com/public/theSoul/uploads/catalog/product/1546674166_Friends_Hugsy_Tshirt_FrontMockup.jpg",
+            "secondary_image": "https://images.thesouledstore.com/public/theSoul/uploads/catalog/product/1546674166_Friends_Hugsy_T-shirt_PrintFile_SquareImage.jpg",
+            "normal_price": 499,
+            "exclusive_price": 399,
+            "product_type": "T-Shirts"
+        }
+    ]
+}
