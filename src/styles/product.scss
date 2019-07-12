@@ -1,3 +1,10 @@
+.product {
+  transition: 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+    z-index: 1;
+  }
+}
 .product__catalog__name {
   position: absolute;
   bottom: 1rem;
