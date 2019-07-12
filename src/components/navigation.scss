@@ -1,0 +1,44 @@
+@import "../styles/_colors";
+
+.nav__top {
+  background: $red;
+  color: $white;
+  padding: 0.2rem;
+  span {
+    margin: 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+.navbar-brand {
+  position: absolute;
+  top: 0;
+  left: 2rem;
+}
+
+.nav-item--new {
+  color: $red;
+}
+
+.nav {
+  margin-left: 10rem;
+}
+
+.navbar-nav {
+  font-size: 0.8rem;
+}
+
+.navbar-nav .nav-link {
+  padding: 1rem 0;
+  text-transform: uppercase;
+  color: $primary-text;
+  font-weight: 600;
+  &:hover {
+    box-shadow: inset 0 -4px 0 $red;
+    background: $dark-white;
+    color: $red;
+  }
+}
+
+@media (min-width: 768px) {
+}
