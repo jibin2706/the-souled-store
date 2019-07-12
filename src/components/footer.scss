@@ -1,0 +1,30 @@
+@import "../styles/_colors";
+
+.footer {
+  background: $dark-white;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.footer__header {
+  font-weight: 600;
+  color: $red;
+}
+
+.footer__info {
+  font-weight: 400;
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.footer__links a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  color: $primary-text;
+  &:hover {
+    color: $red;
+    text-decoration: none;
+  }
+}
