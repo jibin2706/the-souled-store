@@ -1,0 +1,14 @@
+.social__links {
+  transition: all 0.3s ease;
+  img {
+    width: 50px;
+  }
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes translateUp {
+  to {
+  }
+}
