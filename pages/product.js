@@ -24,11 +24,11 @@ function Index() {
     <Layout>
       <Product_Banner />
       <div className="row mt-5 mb-5">
-        <div className="col-md-3">
+        <div className="d-sm-none d-md-block col-md-3">
           <li>Put filter content here</li>
         </div>
         {!isLoading && (
-          <div className="row col-md-9">
+          <div className="row col-12 col-md-9">
             {products.products.map((product, index) => (
               <Product_Card
                 key={index}

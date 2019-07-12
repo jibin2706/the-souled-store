@@ -5,7 +5,7 @@ function Product({ primaryImg, secondaryImg, product_name, prodcut_type, regular
   const [imagehovered, changeHoverStatus] = useState(false);
 
   return (
-    <div className="col-lg-4 col-md-6 col-sm-6">
+    <div className="col-6 col-lg-4">
       <div
         className="product__image"
         onMouseOver={() => changeHoverStatus(true)}
