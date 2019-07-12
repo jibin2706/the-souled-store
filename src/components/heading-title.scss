@@ -1,0 +1,23 @@
+.heading__title {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.heading__title::before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-top: 2px dashed;
+  top: 50%;
+  width: 100%;
+  z-index: 1;
+}
+
+.heading__title span {
+  position: relative;
+  font-size: 24px;
+  font-weight: 600;
+  z-index: 10;
+  background: #ffffff;
+}
