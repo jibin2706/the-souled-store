@@ -23,23 +23,25 @@ function Index() {
   return (
     <Layout>
       <Product_Banner />
-      <div className="row mt-5 mb-5">
-        <div className="d-sm-none d-md-block col-md-3">
+      <div className="row mt-5 mb-5 w-100">
+        <div className="d-none d-md-block col-md-3">
           <li>Put filter content here</li>
         </div>
         {!isLoading && (
-          <div className="row col-12 col-md-9">
-            {products.products.map((product, index) => (
-              <Product_Card
-                key={index}
-                primaryImg={product.primary_image}
-                secondaryImg={product.secondary_image}
-                product_name={product.product_name}
-                prodcut_type={product.prodcut_type}
-                regular_price={product.normal_price}
-                excl_price={product.exclusive_price}
-              />
-            ))}
+          <div className="col-md-9">
+            <div className="row">
+              {products.products.map((product, index) => (
+                <Product_Card
+                  key={index}
+                  primaryImg={product.primary_image}
+                  secondaryImg={product.secondary_image}
+                  product_name={product.product_name}
+                  prodcut_type={product.prodcut_type}
+                  regular_price={product.normal_price}
+                  excl_price={product.exclusive_price}
+                />
+              ))}
+            </div>
           </div>
         )}
       </div>

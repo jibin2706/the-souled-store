@@ -5,7 +5,7 @@ function Product({ primaryImg, secondaryImg, product_name, prodcut_type, regular
   const [imagehovered, changeHoverStatus] = useState(false);
 
   return (
-    <div className="col-6 col-lg-4">
+    <div className="product__card col-6 col-lg-4 mb-5">
       <div
         className="product__image"
         onMouseOver={() => changeHoverStatus(true)}
@@ -21,11 +21,11 @@ function Product({ primaryImg, secondaryImg, product_name, prodcut_type, regular
       <h2 className="product__name">{product_name}</h2>
       <hr className="product__divider" />
       <div className="product__details">
-        <div className="d-flex justify-content-between">
-          <span>{prodcut_type}</span>
+        <div className="product__price d-flex justify-content-between">
+          <span>T-Shirt</span>
           <span>Rs. {regular_price}</span>
         </div>
-        <div className="text-secondary d-flex justify-content-between">
+        <div className="product__price--blue d-flex justify-content-between">
           <span>For Excl. member</span>
           <span>Rs. {excl_price}</span>
         </div>
