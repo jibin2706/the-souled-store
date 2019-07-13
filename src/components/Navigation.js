@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import "./navigation.scss";
 
 function Navigation() {
@@ -7,73 +8,54 @@ function Navigation() {
       <div className="nav__top text-right">
         <span>Track Order</span>
       </div>
-      <div className="navbar-nav navbar-expand-md">
-        <a className="navbar-brand" href="/">
-          <img src="/static/logo.png" alt="logo" />
-        </a>
-        <div className="navbar-nav">
-          <div className="nav">
+      <Navbar bg="light" expand="lg">
+        <Navbar.Brand href="#home">
+          <a className="navbar-brand d-none d-md-none d-lg-block" href="/">
+            <img src="/static/logo.png" alt="logo" />
+          </a>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
             <ShopNavList />
             <OfficalMerchList />
             <NavItem href="/" title="Game of thrones" isNew={false} />
             <NavItem href="/" title="Exclusive" isNew={true} />
-          </div>
-        </div>
-      </div>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     </div>
   );
 }
 
 function NavItem({ href, title, isNew }) {
   return (
-    <li className="nav-item">
-      <a className="nav-link" href={href}>
-        {title}
-        {isNew && <sup className="nav-item--new">new</sup>}
-      </a>
-    </li>
+    <Nav.Link className="nav-item" href={href}>
+      {title}
+      {isNew && <sup className="nav-item--new">new</sup>}
+    </Nav.Link>
   );
 }
 
 function ShopNavList() {
-  const [dropListStatus, changeDropStatus] = useState(false);
-
   return (
-    <div className="nav-item" onMouseOver={() => changeDropStatus(true)}>
-      <a className="nav-link" href="/">
-        Shop
-      </a>
-      {dropListStatus && (
-        <div class="dropdown-menu" onMouseLeave={() => changeDropStatus(false)}>
-          <a class="dropdown-item" href="#">
-            Action
-          </a>
-          <a class="dropdown-item" href="#">
-            Another action
-          </a>
-          <a class="dropdown-item" href="#">
-            Something else here
-          </a>
-        </div>
-      )}
-    </div>
+    <>
+      <NavDropdown title="Shop" id="basic-nav-dropdown">
+        <NavDropdown.Item href="/product">T-Shirts</NavDropdown.Item>
+        <NavDropdown.Item href="/product">Stickers</NavDropdown.Item>
+        <NavDropdown.Item href="/product">Backpacks</NavDropdown.Item>
+      </NavDropdown>
+    </>
   );
 }
 
 function OfficalMerchList() {
-  const [dropListStatus, changeDropStatus] = useState(false);
-
   return (
-    <div className="nav-item" onMouseOver={() => changeDropStatus(true)}>
-      <a className="nav-link" href="/">
-        Official Merch
-      </a>
-      {dropListStatus && (
-        <div className="nav__drop__list" onMouseLeave={() => changeDropStatus(false)}>
-          {/* <h1>Merch list</h1> */}
-        </div>
-      )}
-    </div>
+    <NavDropdown title="Offical Merch" id="basic-nav-dropdown">
+      <NavDropdown.Item href="/product">Film Tv</NavDropdown.Item>
+      <NavDropdown.Item href="/product">Bollywood</NavDropdown.Item>
+      <NavDropdown.Item href="/product">Music</NavDropdown.Item>
+    </NavDropdown>
   );
 }
 
