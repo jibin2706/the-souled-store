@@ -4,8 +4,8 @@ import "./footer.scss";
 
 function Footer() {
   return (
-    <footer className="footer p-2 p-md-5">
-      <div className="row">
+    <footer className="footer">
+      <div className="row w-100 p-3">
         <div className="col-6 col-lg-3 mt-3">
           <h4 className="footer__header">Need help</h4>
           <div className="footer__links">
