@@ -3,6 +3,10 @@
 @import "./_colors";
 @import "./product.scss";
 
+html {
+  font-size: 14px;
+}
+
 body {
   font-family: "Source Pro Sans", sans-serif;
   color: $primary-text;
