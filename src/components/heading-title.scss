@@ -10,14 +10,21 @@
   display: block;
   border-top: 2px dashed;
   top: 50%;
+  left: 0;
   width: 100%;
   z-index: 1;
 }
 
 .heading__title span {
   position: relative;
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 600;
   z-index: 10;
   background: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .heading__title span {
+    font-size: 24px;
+  }
 }
